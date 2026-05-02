@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/akshay_portfolio/static/css/main.c92c46be.css",
-    "main.js": "/akshay_portfolio/static/js/main.01e059ef.js",
+    "main.css": "/akshay_portfolio/static/css/main.c7e582d0.css",
+    "main.js": "/akshay_portfolio/static/js/main.cb867c94.js",
     "static/css/64.bba8fa55.chunk.css": "/akshay_portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.a5b95e96.chunk.js": "/akshay_portfolio/static/js/64.a5b95e96.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/akshay_portfolio/static/css/769.b3cbb36b.chunk.css",
@@ -21,15 +21,15 @@
     "static/media/pwaLogo.webp": "/akshay_portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/akshay_portfolio/index.html",
     "static/media/talksCardBack.svg": "/akshay_portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.c92c46be.css.map": "/akshay_portfolio/static/css/main.c92c46be.css.map",
-    "main.01e059ef.js.map": "/akshay_portfolio/static/js/main.01e059ef.js.map",
+    "main.c7e582d0.css.map": "/akshay_portfolio/static/css/main.c7e582d0.css.map",
+    "main.cb867c94.js.map": "/akshay_portfolio/static/js/main.cb867c94.js.map",
     "64.bba8fa55.chunk.css.map": "/akshay_portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.a5b95e96.chunk.js.map": "/akshay_portfolio/static/js/64.a5b95e96.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/akshay_portfolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.2af1b33b.chunk.js.map": "/akshay_portfolio/static/js/769.2af1b33b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c92c46be.css",
-    "static/js/main.01e059ef.js"
+    "static/css/main.c7e582d0.css",
+    "static/js/main.cb867c94.js"
   ]
 }
