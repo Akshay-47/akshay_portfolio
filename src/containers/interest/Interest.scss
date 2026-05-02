@@ -1,0 +1,189 @@
+@import "../../_globalColor";
+
+.interest-section {
+  margin: 3rem auto 2rem;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(85, 25, 139, 0.12), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(100, 91, 235, 0.12), transparent 30%),
+    $lightBackground2;
+  color: $textColor;
+  overflow: hidden;
+  border: 1px solid $lightBorder1;
+  box-shadow: 0 10px 30px $lightBoxShadow;
+}
+
+.interest-shell {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 4.5rem 0;
+}
+
+.interest-title {
+  margin: 0;
+  text-align: center;
+  font-size: 3.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.interest-title-icon {
+  color: $buttonColor;
+  font-size: 2.4rem;
+}
+
+.interest-badge-row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.85rem;
+  color: $titleColor;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.interest-badge-icon {
+  color: #2dd47a;
+  font-size: 1.25rem;
+}
+
+.interest-copy {
+  max-width: 980px;
+  margin: 3rem auto 0;
+}
+
+.interest-copy p {
+  margin: 0 0 1.2rem;
+  font-size: 1.12rem;
+  line-height: 1.9;
+  color: $subTitle;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.interest-paragraph-icon {
+  color: $buttonColor;
+  font-size: 1.05rem;
+  margin-top: 0.35rem;
+}
+
+.interest-highlights {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.interest-highlight-card {
+  text-align: center;
+  padding: 1.2rem 1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.interest-highlight-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.interest-highlight-card:nth-child(1) .interest-highlight-icon {
+  color: #7a4cff;
+}
+
+.interest-highlight-card:nth-child(2) .interest-highlight-icon {
+  color: #f5bf2d;
+}
+
+.interest-highlight-card:nth-child(3) .interest-highlight-icon {
+  color: #ff7b21;
+}
+
+.interest-highlight-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.interest-highlight-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: $subTitle;
+  line-height: 1.6;
+}
+
+.interest-section.dark-mode {
+  background:
+    radial-gradient(circle at top left, rgba(45, 109, 240, 0.18), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(18, 95, 143, 0.2), transparent 30%),
+    #07111d;
+  color: #f8fbff;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.interest-section.dark-mode .interest-title-icon {
+  color: #7aa8ff;
+}
+
+.interest-section.dark-mode .interest-badge-row {
+  color: #ffffff;
+}
+
+.interest-section.dark-mode .interest-copy p {
+  color: rgba(248, 251, 255, 0.92);
+}
+
+.interest-section.dark-mode .interest-paragraph-icon {
+  color: #8ec9ff;
+}
+
+.interest-section.dark-mode .interest-highlight-card {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.interest-section.dark-mode .interest-highlight-card p {
+  color: rgba(248, 251, 255, 0.72);
+}
+
+@media (max-width: 1024px) {
+  .interest-title {
+    font-size: 2.7rem;
+  }
+
+  .interest-highlights {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .interest-shell {
+    width: min(92%, 100%);
+    padding: 3rem 0;
+  }
+
+  .interest-title {
+    font-size: 2.1rem;
+  }
+
+  .interest-badge-row {
+    font-size: 1rem;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .interest-copy {
+    margin-top: 2rem;
+  }
+
+  .interest-copy p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}

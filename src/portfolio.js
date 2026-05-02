@@ -1,5 +1,9 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
+import ackoLogo from "./assets/images/company-logos/acko.png";
+import byjusLogo from "./assets/images/company-logos/byjus.jpg";
+import sureifyLogo from "./assets/images/company-logos/sureify.png";
+import techaspectLogo from "./assets/images/company-logos/techaspect.jpg";
 
 const splashScreen = {
   enabled: false,
@@ -23,7 +27,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/Akshay-47",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/akshay-lokray/",
   gmail: "akshay.lokray@gmail.com",
   gitlab: "",
   facebook: "",
@@ -61,6 +65,18 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-react"
     },
     {
+      skillName: "Next.js",
+      fontAwesomeClassname: "fas fa-forward"
+    },
+    {
+      skillName: "Redux",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "Zustand",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
       skillName: "Vue.js",
       fontAwesomeClassname: "fab fa-vuejs"
     },
@@ -69,8 +85,16 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Express",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "WebSockets",
+      fontAwesomeClassname: "fas fa-plug"
+    },
+    {
+      skillName: "Tailwind CSS",
+      fontAwesomeClassname: "fas fa-wind"
     },
     {
       skillName: "CSS3",
@@ -87,6 +111,10 @@ const skillsSection = {
     {
       skillName: "MySQL",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
     }
   ],
   display: true
@@ -105,6 +133,22 @@ const educationInfo = {
         "Coursework included Data Structures and Algorithms, Operating Systems, Computer Security, and Software Tools.",
         "Participated in IEEE Society and extracurricular activities including basketball, carrom, and chess."
       ]
+    },
+    {
+      schoolName: "I Class Junior College, Hyderabad",
+      logo: null,
+      subHeader: "Intermediate / Junior College",
+      duration: "June 2011 - May 2013",
+      desc: "Maths, Physics & Chemistry",
+      descBullets: ["Scored 90% distinction."]
+    },
+    {
+      schoolName: "St. Joseph's High School",
+      logo: null,
+      subHeader: "S.S.C / 10th Standard",
+      duration: "June 2010 - May 2011",
+      desc: "Telangana State Board",
+      descBullets: ["Scored 90% distinction."]
     }
   ]
 };
@@ -117,8 +161,8 @@ const techStack = {
       progressPercentage: "95%"
     },
     {
-      Stack: "Backend Integrations",
-      progressPercentage: "85%"
+      Stack: "Backend",
+      progressPercentage: "60%"
     },
     {
       Stack: "System Design & Delivery",
@@ -128,57 +172,225 @@ const techStack = {
   displayCodersrank: false
 };
 
+const interestSection = {
+  display: true,
+  title: "Financial Markets Enthusiasm",
+  titleIcon: "fas fa-coins",
+  badge: "Personal Interest, Not Professional Advice",
+  badgeIcon: "fas fa-shield-halved",
+  paragraphs: [
+    {
+      icon: "fas fa-magnifying-glass-chart",
+      text: "I enjoy understanding how markets move over full cycles and how investor psychology shapes short-term volatility. In my personal learning time, I follow equities, mutual funds, and macroeconomic signals with a long-term lens."
+    },
+    {
+      icon: "fas fa-calculator",
+      text: "An engineering mindset helps me stay structured: focus on risk-adjusted returns, avoid noise-driven decisions, and evaluate opportunities with clear assumptions instead of impulse."
+    },
+    {
+      icon: "fas fa-seedling",
+      text: "I am especially interested in compounding and disciplined allocation, where consistency and patience generally matter more than chasing short-lived trends."
+    }
+  ],
+  highlights: [
+    {
+      icon: "fas fa-chart-pie",
+      title: "Portfolio Thinking",
+      description:
+        "Allocation, diversification, and downside-aware decision making."
+    },
+    {
+      icon: "fas fa-newspaper",
+      title: "Market Tracking",
+      description:
+        "Following business quality, policy updates, and macro developments."
+    },
+    {
+      icon: "fas fa-arrow-trend-up",
+      title: "Long-term Planning",
+      description:
+        "Compounding-focused habits built for durable long-term outcomes."
+    }
+  ]
+};
+
 const workExperiences = {
   display: true,
   experience: [
     {
       role: "UI Engineer 2",
       company: "ACKO Insurance",
-      companylogo: null,
+      companylogo: ackoLogo,
       date: "2022 - Present",
       desc: "Own and architect conversion-focused journeys across insurance products used daily by thousands of users.",
+      detailTitle:
+        "Built high-stakes insurance journeys with strong product and engineering ownership.",
+      impactStats: [
+        "18% payment conversion improvement",
+        "5 engineers mentored",
+        "70+ edge cases handled"
+      ],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "BFF",
+        "Microservices",
+        "Jest"
+      ],
+      proofLinks: [
+        {
+          name: "Health Insurance Flow",
+          url: "https://www.acko.com/gi/p/health/new/landingPage/intro?utm_source=direct&utm_medium=web"
+        },
+        {
+          name: "Policy Analyzer V2",
+          url: "https://www.acko.com/policy-analyzer/home?seo=&hide_app_bar=true&input_data_id=2de2b3b7-ee32-4e77-92d8-68dd4c260001"
+        }
+      ],
       descBullets: [
         "Led and mentored a team of 5 engineers to build a Backend-for-Frontend layer using Node.js and TypeScript for frontend-to-microservice communication.",
         "Owned end-to-end delivery of the Health Insurance Flow and Policy Analyzer V2 in collaboration with product, design, and backend teams.",
         "Improved payment conversion by 18% through flexible payment options and handling 70+ edge cases across critical flows.",
         "Designed a state-driven chatbot system for real-time UI updates and smoother user journeys."
+      ],
+      detailedSections: [
+        {
+          title: "Architecture & Ownership",
+          items: [
+            "Drove the technical direction for critical insurance purchase journeys with a focus on reliability, clarity, and conversion.",
+            "Designed and built a Backend-for-Frontend layer to simplify frontend integration with multiple downstream microservices.",
+            "Worked closely with product, design, and backend stakeholders to take ideas from requirement stage to production rollout."
+          ]
+        },
+        {
+          title: "Product Impact",
+          items: [
+            "Improved payment conversion by addressing failure paths, introducing more flexible payment handling, and smoothing friction across checkout scenarios.",
+            "Owned the Health Insurance Flow and Policy Analyzer V2 as core user-facing experiences with measurable business impact.",
+            "Created a state-driven chatbot experience to support richer real-time journeys and better user guidance."
+          ]
+        }
       ]
     },
     {
       role: "Senior Software Engineer",
       company: "BYJU'S Future School",
-      companylogo: null,
+      companylogo: byjusLogo,
       date: "2020 - 2022",
       desc: "Built high-scale growth and classroom products across consumer learning platforms.",
+      detailTitle:
+        "Shipped growth, experimentation, and real-time classroom experiences at scale.",
+      impactStats: [
+        "45%+ trial conversion uplift",
+        "32% SEO traffic growth",
+        "Millions of requests processed"
+      ],
+      technologies: [
+        "React",
+        "Agora",
+        "A/B Testing",
+        "SEO",
+        "Performance",
+        "REST APIs"
+      ],
       descBullets: [
         "Developed A/B testing systems, low/no-code campaign tools, and student-sharing infrastructure for rapid experimentation.",
         "Built an AI-driven personalized video system with Rephrase.ai that improved trial class conversions by more than 45%.",
         "Contributed to 32% growth in organic traffic through SEO and performance improvements on high-traffic web properties.",
         "Designed a real-time classroom interaction system using React and Agora, and helped migrate legacy AngularJS/jQuery systems to React."
+      ],
+      detailedSections: [
+        {
+          title: "Growth Systems",
+          items: [
+            "Built internal platforms for experimentation, campaign management, and sharing workflows that helped product teams move faster.",
+            "Contributed to SEO and performance initiatives across high-traffic web properties, leading to significant organic growth.",
+            "Designed data flows and REST integrations to handle high request volumes efficiently."
+          ]
+        },
+        {
+          title: "Engagement & Conversion",
+          items: [
+            "Built a personalized video journey using Rephrase.ai that improved trial class conversion by more than 45%.",
+            "Created real-time classroom interaction capabilities with React and Agora to improve teacher-student engagement.",
+            "Supported migration from older AngularJS and jQuery systems into maintainable React-based experiences."
+          ]
+        }
       ]
     },
     {
       role: "UI Engineer",
       company: "Sureify Labs",
-      companylogo: null,
+      companylogo: sureifyLogo,
       date: "2020",
       desc: "Focused on scalable frontend architecture and internal product tooling.",
+      detailTitle:
+        "Improved frontend flexibility with reusable systems and data-rich tooling.",
+      impactStats: [
+        "10x faster analysis workflows",
+        "Reusable React design system",
+        "Server-driven UI foundation"
+      ],
+      technologies: ["React", "Redux", "MySQL", "Component Library", "SDUI"],
       descBullets: [
         "Architected a Server-Driven UI system in React for faster product iteration.",
         "Led development of a reusable React component library for stronger consistency and developer velocity.",
         "Built an analytics dashboard with React, Redux, and MySQL that reduced analysis time by 10x."
+      ],
+      detailedSections: [
+        {
+          title: "Frontend Platform Work",
+          items: [
+            "Architected a Server-Driven UI pattern that enabled faster changes without tightly coupling every product variation to static frontend code.",
+            "Built reusable components and patterns that improved consistency across screens and reduced repeated implementation effort.",
+            "Partnered across teams to align frontend structure with evolving backend capabilities."
+          ]
+        },
+        {
+          title: "Internal Productivity",
+          items: [
+            "Built an analytics dashboard using React, Redux, and MySQL that reduced analysis time by roughly 10x.",
+            "Focused on maintainability and extensibility so new product work could move faster with lower UI fragmentation."
+          ]
+        }
       ]
     },
     {
       role: "Software Engineer",
       company: "TechAspect Solutions",
-      companylogo: null,
+      companylogo: techaspectLogo,
       date: "2018 - 2020",
       desc: "Delivered web experiences and CMS-driven solutions for product and content teams.",
+      detailTitle:
+        "Built adaptable web solutions across product, content, and commerce experiences.",
+      impactStats: [
+        "Multiple CMS integrations",
+        "Vue.js and jQuery delivery",
+        "Stronger onboarding and maintainability"
+      ],
+      technologies: ["JavaScript", "Vue.js", "jQuery", "AEM", "Sitecore"],
       descBullets: [
         "Built e-commerce and automotive web applications using JavaScript, Vue.js, and jQuery.",
         "Developed integrations with AEM and Sitecore to support dynamic content delivery.",
         "Improved maintainability and onboarding through stronger engineering practices and documentation."
+      ],
+      detailedSections: [
+        {
+          title: "Delivery Scope",
+          items: [
+            "Worked on consumer-facing web applications in domains including e-commerce and automotive.",
+            "Built features using JavaScript, Vue.js, and jQuery in collaboration with broader delivery teams.",
+            "Integrated with enterprise CMS platforms such as AEM and Sitecore to power dynamic content delivery."
+          ]
+        },
+        {
+          title: "Engineering Practices",
+          items: [
+            "Improved maintainability through better structure, documentation, and team-facing engineering practices.",
+            "Helped reduce onboarding friction by making project conventions and implementation patterns easier to follow."
+          ]
+        }
       ]
     }
   ]
@@ -320,6 +532,7 @@ export {
   skillsSection,
   educationInfo,
   techStack,
+  interestSection,
   workExperiences,
   openSource,
   bigProjects,

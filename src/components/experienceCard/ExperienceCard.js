@@ -2,7 +2,7 @@ import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({cardInfo, isDark, isActive, onSelect}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -20,21 +20,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
-
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
+    <button
+      type="button"
+      className={`${isDark ? "experience-card-dark" : "experience-card"} ${
+        isActive ? "experience-card-active" : ""
+      }`}
+      onClick={onSelect}
+    >
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
@@ -52,6 +45,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
         )}
       </div>
       <div className="experience-text-details">
+        <span className={isDark ? "experience-card-company-tag dark-mode-text" : "experience-card-company-tag"}>
+          {cardInfo.company}
+        </span>
+        {cardInfo.hasProofLinks && (
+          <span className={isDark ? "experience-card-link-hint dark-mode-text" : "experience-card-link-hint"}>
+            Live project links available
+          </span>
+        )}
         <h5
           className={
             isDark
@@ -73,16 +74,22 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <p
           className={
             isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
+              ? "subTitle experience-text-desc experience-text-desc-clamped dark-mode-text"
+              : "subTitle experience-text-desc experience-text-desc-clamped"
           }
         >
           {cardInfo.desc}
         </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+        <span
+          className={
+            isDark
+              ? "experience-card-cta dark-mode-text"
+              : "experience-card-cta"
+          }
+        >
+          View detailed work...
+        </span>
       </div>
-    </div>
+    </button>
   );
 }

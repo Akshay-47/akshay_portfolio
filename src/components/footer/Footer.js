@@ -11,16 +11,6 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           Built by Akshay Kumar LR
         </p>
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Powered by{" "}
-          <a
-            href="https://github.com/saadpasta/developerFolio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            developerFolio
-          </a>
-        </p>
       </div>
     </Fade>
   );
