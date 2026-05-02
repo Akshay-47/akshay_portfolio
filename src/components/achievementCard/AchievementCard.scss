@@ -83,3 +83,29 @@
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+
+@media (max-width: 768px) {
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .certificate-card {
+    padding: 1.1rem;
+    border-radius: 12px;
+  }
+
+  .certificate-image-div {
+    height: 190px;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  .card-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

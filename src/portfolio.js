@@ -206,7 +206,7 @@ const interestSection = {
         "Following business quality, policy updates, and macro developments."
     },
     {
-      icon: "fas fa-arrow-trend-up",
+      icon: "fas fa-chart-line",
       title: "Long-term Planning",
       description:
         "Compounding-focused habits built for durable long-term outcomes."

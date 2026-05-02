@@ -163,19 +163,33 @@
 }
 
 @media (max-width: 768px) {
+  .interest-section {
+    margin: 2rem auto 1rem;
+    border-radius: 20px;
+  }
+
   .interest-shell {
-    width: min(92%, 100%);
+    width: min(94%, 100%);
     padding: 3rem 0;
   }
 
   .interest-title {
     font-size: 2.1rem;
+    line-height: 1.25;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .interest-title-icon {
+    font-size: 1.9rem;
   }
 
   .interest-badge-row {
     font-size: 1rem;
     text-align: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   .interest-copy {
@@ -185,5 +199,83 @@
   .interest-copy p {
     font-size: 1rem;
     line-height: 1.8;
+  }
+
+  .interest-highlight-card {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .interest-highlight-icon {
+    margin-bottom: 0.7rem;
+  }
+
+  .interest-highlight-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .interest-section {
+    border-radius: 16px;
+    margin: 1.4rem auto 0.8rem;
+  }
+
+  .interest-shell {
+    width: 94%;
+    padding: 2rem 0;
+  }
+
+  .interest-title {
+    font-size: 1.65rem;
+    gap: 0.45rem;
+  }
+
+  .interest-title-icon {
+    font-size: 1.45rem;
+  }
+
+  .interest-badge-row {
+    margin-top: 1.2rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .interest-copy {
+    margin-top: 1.3rem;
+  }
+
+  .interest-copy p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    gap: 0.55rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .interest-paragraph-icon {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+  }
+
+  .interest-highlights {
+    margin-top: 1.3rem;
+    gap: 0.65rem;
+  }
+
+  .interest-highlight-card {
+    padding: 0.85rem;
+  }
+
+  .interest-highlight-icon {
+    font-size: 1.45rem;
+  }
+
+  .interest-highlight-card h3 {
+    font-size: 1.08rem;
+  }
+
+  .interest-highlight-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

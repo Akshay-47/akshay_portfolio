@@ -101,7 +101,23 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.4rem;
+  }
+
+  .button-greeting-div .main-button {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .download-link-button {
+    width: 100%;
+    max-width: 280px;
   }
   .greeting-text {
     font-size: 30px;
